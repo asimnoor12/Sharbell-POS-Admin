@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Add Brand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h4 class="text-themecolor">Brands</h4>
+    </div>
+    <div class="col-md-7 align-self-center text-right">
+        <div class="d-flex justify-content-end align-items-center">
+
+            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Add Brand</h4>
+                <form class="needs-validation was-validated" novalidate="">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Merchent ID</label>
+                            <select class="custom-select" required="">
+                                <option value="">Select Merchent ID</option>
+                                <option value="1">335</option>
+                                <option value="2">121</option>
+                                <option value="3">144</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please Select Merchent ID.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Brand Name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Nike" required="">
+                            <div class="invalid-feedback">
+                                Please Enter Brand Name.
+                            </div>
+                        </div>
+                       
+                    </div>
+               
+                    <button class="btn btn-primary" type="submit">Add Product</button>
+                </form>
+                <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function() {
+                                    'use strict';
+                                    window.addEventListener('load', function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function(form) {
+                                            form.addEventListener('submit', function(event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();</script>
+            </div>
+        </div>
+    </div>
+
+</div>

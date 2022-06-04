@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h4 class="text-themecolor">Categories</h4>
+    </div>
+    <div class="col-md-7 align-self-center text-right">
+        <div class="d-flex justify-content-end align-items-center">
+
+            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table full-color-table full-danger-table hover-table">
+                        <thead>
+                            <tr>
+                                <th>Merchent ID</th>
+                                <th>Category ID</th>
+                                <th>Category Name</th>
+                                <th>Abbrivation</th>
+                                <th>Background Color</th>
+                                <th>Fore Color</th>
+                                <th>Taxtype ID</th>
+                                <th>Image</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>211-John</td>
+                                <td>727</td>
+                                <td>Sports Shoes</td>
+                                <td>-</td>
+                                <td><div><input type="color"  value="#f6f82" id="colorPicker"></div></td>
+                                <td><div><input type="color"  value="#f6f82" id="colorPicker"></div></td>
+                                <td>842034</td>
+                                <td style="display: table-cell;">
+                                    <a href="javascript:void(0)"><img src="https://cdn.thewirecutter.com/wp-content/media/2021/10/running-shoes-2048px-3128-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024" alt="user" width="80" class=""></a>
+                                </td>
+                                    <tr>
+                                <td>211-Corney</td>
+                                <td>243</td>
+                                <td>Wallets</td>
+                                <td>-</td>
+                                <td><div><input type="color"  value="#F5F6F7" id="colorPicker"></div></td>
+                                <td><div><input type="color"  value="#91210B" id="colorPicker"></div></td>
+                                <td>7838947</td>
+                                <td style="display: table-cell;">
+                                    <a href="javascript:void(0)"><img src="https://cdn.wisden.com/wp-content/uploads/2019/03/Screen-Shot-2020-03-13-at-11.21.59-am-e1584098709326-925x530.jpg" alt="user" width="80" class=""></a>
+                                </td>
+                                    <tr>
+                                <td>211-Robero</td>
+                                <td>980</td>
+                                <td>Sport Bats</td>
+                                <td>-</td>
+                                <td><div><input type="color"  value="#FFEDC8" id="colorPicker"></div></td>
+                                <td><div><input type="color"  value="#3B4F81" id="colorPicker"></div></td>
+                                <td>209381</td>
+                                <td style="display: table-cell;">
+                                    <a href="javascript:void(0)"><img src="https://www.mydxsports.com/images/producttype/banner-657238-010121104402.jpg" alt="user" width="80" class=""></a>
+                                </td>
+
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
